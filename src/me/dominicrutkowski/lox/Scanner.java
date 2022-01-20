@@ -142,7 +142,7 @@ public class Scanner {
             }
         }
 
-        addToken(NUMBER, source.substring(start, current));
+        addToken(NUMBER, Double.parseDouble(source.substring(start, current)));
     }
 
     private void identifier() {
